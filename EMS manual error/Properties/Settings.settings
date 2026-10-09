@@ -1,0 +1,52 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EMSME.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TcpPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7769</Value>
+    </Setting>
+    <Setting Name="Contact" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">software@sebastianlang.net</Value>
+    </Setting>
+    <Setting Name="Website" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://github.com/SebastianLang-GER/ems-manual-error</Value>
+    </Setting>
+    <Setting Name="Developer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Sebastian Lang</Value>
+    </Setting>
+    <Setting Name="Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"EMS manual error" provides a simple button for EMC susceptibility test software to trigger EUT errors manually.
+This tool was originally developed for R&amp;S®ELEKTRA. However, it is compatible with any EMS software that can integrate monitoring devices or tools via TCP/IP and SCPI commands.
+"EMS manual error" is highly customizable for maximum compatablity with other software and ease of use according to your needs.
+
+Credits:
+Silk icon set by Mark James (famfamfam.com)
+
+Legal notice:
+R&amp;S® is a registered trademark of Rohde &amp; Schwarz GmbH &amp; Co. KG.
+
+License:
+This software is licensed under MIT Licence.
+
+Copyright © 2026 Sebastian Lang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
