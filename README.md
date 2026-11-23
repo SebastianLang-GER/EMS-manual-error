@@ -2,7 +2,7 @@
 <img align="right" width="100" height="100" src="/Graphics/Icon.svg">
 A simple button for EMC susceptibility test software to trigger EUT (equipment under test) errors manually.<br />
 This tool was originally developed for <a href="https://www.rohde-schwarz.com/products/test-and-measurement/emc-test-software/rs-elektra-test-software_63493-584628.html">R&S®ELEKTRA</a>. However, it is compatible with any EMS software that can integrate monitoring devices or tools via TCP/IP and SCPI commands.<br />
-<i>EMS manual error</i> is highly customizable for maximum compatablity with other software and ease of use according to your needs.
+<i>EMS manual error</i> is highly customizable for maximum compatibility with other software and ease of use according to your needs.
 
 ## Dependencies
 ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)  

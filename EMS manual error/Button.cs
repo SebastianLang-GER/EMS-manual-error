@@ -31,10 +31,9 @@ namespace EMSME
         {
             // Correct width
             Width = 100;
-            
-            // Set location
-            Rectangle area = Screen.PrimaryScreen!.WorkingArea;
-            Location = new Point(area.Right - Width, area.Bottom - Height);
+
+            // Set default location
+            setDefaultLocation();
 
             // Show window
             Opacity = 1;
@@ -107,6 +106,34 @@ namespace EMSME
                     errorButton.BackColor = Color.FromArgb(red, green, blue);
                 }
             }
+        }
+
+        private void contextMenuStrip_Opening(object sender, CancelEventArgs e)
+        {
+            // Sync top most property
+            toolStripMenuItemTopMost.Checked = TopMost;
+        }
+
+        private void toolStripMenuItemHide_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void toolStripMenuItemDefaultLocation_Click(object sender, EventArgs e)
+        {
+            setDefaultLocation();
+        }
+
+        private void toolStripMenuItemTopMost_Click(object sender, EventArgs e)
+        {
+            TopMost = toolStripMenuItemTopMost.Checked;
+        }
+
+        private void setDefaultLocation()
+        {
+            // Set location
+            Rectangle area = Screen.PrimaryScreen!.WorkingArea;
+            Location = new Point(area.Right - Width, area.Bottom - Height);
         }
     }
 }

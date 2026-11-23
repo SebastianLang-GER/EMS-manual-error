@@ -17,7 +17,7 @@
     <Company>Sebastian Lang</Company>
     <Description>A simple button for EMC susceptibility test software to trigger EUT errors manually.
 This tool was originally developed for R&amp;S®ELEKTRA. However, it is compatible with any EMS software that can integrate monitoring devices or tools via TCP/IP and SCPI commands.
-"EMS manual error" is highly customizable for maximum compatablity with other software and ease of use according to your needs.</Description>
+"EMS manual error" is highly customizable for maximum compatibility with other software and ease of use according to your needs.</Description>
     <Copyright>Sebastian Lang</Copyright>
     <PackageProjectUrl>https://github.com/SebastianLang-GER/ems-manual-error</PackageProjectUrl>
     <PackageIcon>Icon.png</PackageIcon>

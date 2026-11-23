@@ -32,6 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Button));
             errorButton = new System.Windows.Forms.Button();
             animationTimer = new System.Windows.Forms.Timer(components);
+            contextMenuStrip = new ContextMenuStrip(components);
+            toolStripMenuItemHide = new ToolStripMenuItem();
+            toolStripMenuItemDefaultLocation = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            toolStripMenuItemTopMost = new ToolStripMenuItem();
+            contextMenuStrip.SuspendLayout();
             SuspendLayout();
             // 
             // errorButton
@@ -52,8 +58,42 @@
             // 
             // animationTimer
             // 
-            animationTimer.Interval = 5;
+            animationTimer.Interval = 3;
             animationTimer.Tick += animationTimer_Tick;
+            // 
+            // contextMenuStrip
+            // 
+            contextMenuStrip.Items.AddRange(new ToolStripItem[] { toolStripMenuItemHide, toolStripMenuItemDefaultLocation, toolStripSeparator1, toolStripMenuItemTopMost });
+            contextMenuStrip.Name = "contextMenuStrip";
+            contextMenuStrip.Size = new Size(159, 76);
+            contextMenuStrip.Opening += contextMenuStrip_Opening;
+            // 
+            // toolStripMenuItemHide
+            // 
+            toolStripMenuItemHide.Name = "toolStripMenuItemHide";
+            toolStripMenuItemHide.Size = new Size(158, 22);
+            toolStripMenuItemHide.Text = "Hide button";
+            toolStripMenuItemHide.Click += toolStripMenuItemHide_Click;
+            // 
+            // toolStripMenuItemDefaultLocation
+            // 
+            toolStripMenuItemDefaultLocation.Name = "toolStripMenuItemDefaultLocation";
+            toolStripMenuItemDefaultLocation.Size = new Size(158, 22);
+            toolStripMenuItemDefaultLocation.Text = "Default position";
+            toolStripMenuItemDefaultLocation.Click += toolStripMenuItemDefaultLocation_Click;
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(155, 6);
+            // 
+            // toolStripMenuItemTopMost
+            // 
+            toolStripMenuItemTopMost.CheckOnClick = true;
+            toolStripMenuItemTopMost.Name = "toolStripMenuItemTopMost";
+            toolStripMenuItemTopMost.Size = new Size(158, 22);
+            toolStripMenuItemTopMost.Text = "Always on top";
+            toolStripMenuItemTopMost.Click += toolStripMenuItemTopMost_Click;
             // 
             // Button
             // 
@@ -62,6 +102,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(100, 75);
+            ContextMenuStrip = contextMenuStrip;
             ControlBox = false;
             Controls.Add(errorButton);
             FormBorderStyle = FormBorderStyle.None;
@@ -76,6 +117,7 @@
             TopMost = true;
             Shown += Button_Shown;
             MouseDown += Button_MouseDown;
+            contextMenuStrip.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -83,5 +125,10 @@
 
         private System.Windows.Forms.Button errorButton;
         private System.Windows.Forms.Timer animationTimer;
+        private ContextMenuStrip contextMenuStrip;
+        private ToolStripMenuItem toolStripMenuItemTopMost;
+        private ToolStripMenuItem toolStripMenuItemHide;
+        private ToolStripMenuItem toolStripMenuItemDefaultLocation;
+        private ToolStripSeparator toolStripSeparator1;
     }
 }

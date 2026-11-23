@@ -1,5 +1,22 @@
 using System.ComponentModel;
 
+/***
+ * To do:
+ * - SCPI server
+ * - Autostart with Windows
+ * - Always on top --> (on)/off, if known software (ELEKTRA) is open, permanent
+ *   - List of Processes
+ * - Window position
+ *   - Window fixed/moveable
+ *   - Coordinates or areas (corners, multiple screens etc.) with quick select buttons
+ *   - Location related to program (ELEKTRA)
+ * - Server settings
+ *   - TCP-Port
+ *   - Commands/responses Table
+ *   - Value on error/no error
+ * - Global shortcut
+ */
+
 namespace EMSME
 {
     internal static class Program
@@ -27,10 +44,17 @@ namespace EMSME
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Button());
+            bool firstAppInstance = true;
+
+            // single instance application
+            using (new Mutex(initiallyOwned: true, "EMS manual error", out firstAppInstance))
+            {
+                if (firstAppInstance)
+                {
+                    ApplicationConfiguration.Initialize();
+                    Application.Run(new TrayIconApp());
+                }
+            }
         }
     }
 }

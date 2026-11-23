@@ -23,18 +23,6 @@ namespace EMSME.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("7769")]
-        public int TcpPort {
-            get {
-                return ((int)(this["TcpPort"]));
-            }
-            set {
-                this["TcpPort"] = value;
-            }
-        }
-        
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("software@sebastianlang.net")]
@@ -89,6 +77,30 @@ namespace EMSME.Properties {
         public string Description {
             get {
                 return ((string)(this["Description"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("7769")]
+        public int TcpPort {
+            get {
+                return ((int)(this["TcpPort"]));
+            }
+            set {
+                this["TcpPort"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool TopMost {
+            get {
+                return ((bool)(this["TopMost"]));
+            }
+            set {
+                this["TopMost"] = value;
             }
         }
     }

@@ -2,9 +2,6 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EMSME.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="TcpPort" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">7769</Value>
-    </Setting>
     <Setting Name="Contact" Type="System.String" Scope="Application">
       <Value Profile="(Default)">software@sebastianlang.net</Value>
     </Setting>
@@ -47,6 +44,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.</Value>
+    </Setting>
+    <Setting Name="TcpPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7769</Value>
+    </Setting>
+    <Setting Name="TopMost" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

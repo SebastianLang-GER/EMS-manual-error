@@ -34,14 +34,14 @@
             developerValueLabel = new Label();
             versionValueLabel = new Label();
             productNameValueLable = new Label();
+            descriptionLabel = new Label();
             developerLabel = new Label();
             versionLabel = new Label();
             productNameLabel = new Label();
+            descriptionTextBox = new TextBox();
             contactButton = new System.Windows.Forms.Button();
             closeButton = new System.Windows.Forms.Button();
             websiteButton = new System.Windows.Forms.Button();
-            descriptionTextBox = new TextBox();
-            descriptionLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox).BeginInit();
             tableLayoutPanelAbout.SuspendLayout();
             SuspendLayout();
@@ -78,7 +78,7 @@
             tableLayoutPanelAbout.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanelAbout.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanelAbout.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanelAbout.Size = new Size(374, 253);
+            tableLayoutPanelAbout.Size = new Size(474, 303);
             tableLayoutPanelAbout.TabIndex = 1;
             // 
             // developerValueLabel
@@ -88,7 +88,7 @@
             developerValueLabel.Font = new Font("Segoe UI", 9F);
             developerValueLabel.Location = new Point(94, 40);
             developerValueLabel.Name = "developerValueLabel";
-            developerValueLabel.Size = new Size(277, 20);
+            developerValueLabel.Size = new Size(377, 20);
             developerValueLabel.TabIndex = 7;
             developerValueLabel.Text = "Developer";
             // 
@@ -99,7 +99,7 @@
             versionValueLabel.Font = new Font("Segoe UI", 9F);
             versionValueLabel.Location = new Point(94, 20);
             versionValueLabel.Name = "versionValueLabel";
-            versionValueLabel.Size = new Size(277, 20);
+            versionValueLabel.Size = new Size(377, 20);
             versionValueLabel.TabIndex = 6;
             versionValueLabel.Text = "Version";
             // 
@@ -110,9 +110,20 @@
             productNameValueLable.Font = new Font("Segoe UI", 9F);
             productNameValueLable.Location = new Point(94, 0);
             productNameValueLable.Name = "productNameValueLable";
-            productNameValueLable.Size = new Size(277, 20);
+            productNameValueLable.Size = new Size(377, 20);
             productNameValueLable.TabIndex = 5;
             productNameValueLable.Text = "Product Name";
+            // 
+            // descriptionLabel
+            // 
+            descriptionLabel.AutoSize = true;
+            descriptionLabel.Dock = DockStyle.Fill;
+            descriptionLabel.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            descriptionLabel.Location = new Point(3, 60);
+            descriptionLabel.Name = "descriptionLabel";
+            descriptionLabel.Size = new Size(85, 243);
+            descriptionLabel.TabIndex = 4;
+            descriptionLabel.Text = "Description:";
             // 
             // developerLabel
             // 
@@ -147,10 +158,22 @@
             productNameLabel.TabIndex = 0;
             productNameLabel.Text = "Product Name:";
             // 
+            // descriptionTextBox
+            // 
+            descriptionTextBox.Dock = DockStyle.Fill;
+            descriptionTextBox.Location = new Point(94, 63);
+            descriptionTextBox.Multiline = true;
+            descriptionTextBox.Name = "descriptionTextBox";
+            descriptionTextBox.PlaceholderText = "Description";
+            descriptionTextBox.ReadOnly = true;
+            descriptionTextBox.ScrollBars = ScrollBars.Vertical;
+            descriptionTextBox.Size = new Size(377, 237);
+            descriptionTextBox.TabIndex = 9;
+            // 
             // contactButton
             // 
             contactButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            contactButton.Location = new Point(98, 271);
+            contactButton.Location = new Point(98, 321);
             contactButton.Name = "contactButton";
             contactButton.Size = new Size(80, 28);
             contactButton.TabIndex = 3;
@@ -161,7 +184,7 @@
             // 
             closeButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             closeButton.DialogResult = DialogResult.OK;
-            closeButton.Location = new Point(392, 271);
+            closeButton.Location = new Point(492, 321);
             closeButton.Name = "closeButton";
             closeButton.Size = new Size(80, 28);
             closeButton.TabIndex = 4;
@@ -171,35 +194,12 @@
             // websiteButton
             // 
             websiteButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            websiteButton.Location = new Point(12, 271);
+            websiteButton.Location = new Point(12, 321);
             websiteButton.Name = "websiteButton";
             websiteButton.Size = new Size(80, 28);
             websiteButton.TabIndex = 2;
             websiteButton.Text = "Website";
             websiteButton.Click += websiteButton_Click;
-            // 
-            // descriptionTextBox
-            // 
-            descriptionTextBox.Dock = DockStyle.Fill;
-            descriptionTextBox.Location = new Point(94, 63);
-            descriptionTextBox.Multiline = true;
-            descriptionTextBox.Name = "descriptionTextBox";
-            descriptionTextBox.PlaceholderText = "Description";
-            descriptionTextBox.ReadOnly = true;
-            descriptionTextBox.ScrollBars = ScrollBars.Vertical;
-            descriptionTextBox.Size = new Size(277, 187);
-            descriptionTextBox.TabIndex = 9;
-            // 
-            // descriptionLabel
-            // 
-            descriptionLabel.AutoSize = true;
-            descriptionLabel.Dock = DockStyle.Fill;
-            descriptionLabel.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            descriptionLabel.Location = new Point(3, 60);
-            descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new Size(85, 193);
-            descriptionLabel.TabIndex = 4;
-            descriptionLabel.Text = "Description:";
             // 
             // About
             // 
@@ -207,17 +207,18 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             CancelButton = closeButton;
-            ClientSize = new Size(484, 311);
+            ClientSize = new Size(584, 361);
             Controls.Add(websiteButton);
             Controls.Add(closeButton);
             Controls.Add(contactButton);
             Controls.Add(tableLayoutPanelAbout);
             Controls.Add(iconPictureBox);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
+            MinimumSize = new Size(500, 350);
             Name = "About";
+            SizeGripStyle = SizeGripStyle.Show;
             StartPosition = FormStartPosition.CenterParent;
             Text = "About";
             ((System.ComponentModel.ISupportInitialize)iconPictureBox).EndInit();
