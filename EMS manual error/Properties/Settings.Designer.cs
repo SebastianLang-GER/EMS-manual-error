@@ -12,7 +12,7 @@ namespace EMSME.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "18.10.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "18.12.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -56,24 +56,24 @@ namespace EMSME.Properties {
             "to trigger EUT errors manually.\r\nThis tool was originally developed for R&S®ELEK" +
             "TRA. However, it is compatible with any EMS software that can integrate monitori" +
             "ng devices or tools via TCP/IP and SCPI commands.\r\n\"EMS manual error\" is highly " +
-            "customizable for maximum compatablity with other software and ease of use accord" +
-            "ing to your needs.\r\n\r\nCredits:\r\nSilk icon set by Mark James (famfamfam.com)\r\n\r\nL" +
-            "egal notice:\r\nR&S® is a registered trademark of Rohde & Schwarz GmbH & Co. KG.\r\n" +
-            "\r\nLicense:\r\nThis software is licensed under MIT Licence.\r\n\r\nCopyright © 2026 Seb" +
-            "astian Lang\r\n\r\nPermission is hereby granted, free of charge, to any person obtai" +
-            "ning a copy\r\nof this software and associated documentation files (the \"Software\"" +
-            "), to deal\r\nin the Software without restriction, including without limitation th" +
-            "e rights\r\nto use, copy, modify, merge, publish, distribute, sublicense, and/or s" +
-            "ell\r\ncopies of the Software, and to permit persons to whom the Software is\r\nfurn" +
-            "ished to do so, subject to the following conditions:\r\n\r\nThe above copyright noti" +
-            "ce and this permission notice shall be included in all\r\ncopies or substantial po" +
-            "rtions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF" +
-            " ANY KIND, EXPRESS OR\r\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF M" +
-            "ERCHANTABILITY,\r\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVE" +
-            "NT SHALL THE\r\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR O" +
-            "THER\r\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FR" +
-            "OM,\r\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN T" +
-            "HE\r\nSOFTWARE.")]
+            "customizable for maximum compatibility with other software and ease of use accor" +
+            "ding to your needs.\r\n\r\nCredits:\r\nSilk icon set by Mark James (famfamfam.com)\r\n\r\n" +
+            "Legal notice:\r\nR&S® is a registered trademark of Rohde & Schwarz GmbH & Co. KG.\r" +
+            "\n\r\nLicense:\r\nThis software is licensed under MIT Licence.\r\n\r\nCopyright © 2026 Se" +
+            "bastian Lang\r\n\r\nPermission is hereby granted, free of charge, to any person obta" +
+            "ining a copy\r\nof this software and associated documentation files (the \"Software" +
+            "\"), to deal\r\nin the Software without restriction, including without limitation t" +
+            "he rights\r\nto use, copy, modify, merge, publish, distribute, sublicense, and/or " +
+            "sell\r\ncopies of the Software, and to permit persons to whom the Software is\r\nfur" +
+            "nished to do so, subject to the following conditions:\r\n\r\nThe above copyright not" +
+            "ice and this permission notice shall be included in all\r\ncopies or substantial p" +
+            "ortions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY O" +
+            "F ANY KIND, EXPRESS OR\r\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF " +
+            "MERCHANTABILITY,\r\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EV" +
+            "ENT SHALL THE\r\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR " +
+            "OTHER\r\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING F" +
+            "ROM,\r\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN " +
+            "THE\r\nSOFTWARE.")]
         public string Description {
             get {
                 return ((string)(this["Description"]));

@@ -173,11 +173,14 @@
             // contactButton
             // 
             contactButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            contactButton.Image = (Image)resources.GetObject("contactButton.Image");
+            contactButton.ImageAlign = ContentAlignment.MiddleRight;
             contactButton.Location = new Point(98, 321);
             contactButton.Name = "contactButton";
             contactButton.Size = new Size(80, 28);
             contactButton.TabIndex = 3;
             contactButton.Text = "Contact";
+            contactButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             contactButton.Click += contactButton_Click;
             // 
             // closeButton
@@ -194,11 +197,14 @@
             // websiteButton
             // 
             websiteButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            websiteButton.Image = (Image)resources.GetObject("websiteButton.Image");
+            websiteButton.ImageAlign = ContentAlignment.MiddleRight;
             websiteButton.Location = new Point(12, 321);
             websiteButton.Name = "websiteButton";
             websiteButton.Size = new Size(80, 28);
             websiteButton.TabIndex = 2;
             websiteButton.Text = "Website";
+            websiteButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             websiteButton.Click += websiteButton_Click;
             // 
             // About
